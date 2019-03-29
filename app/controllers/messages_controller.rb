@@ -13,7 +13,7 @@ class MessagesController < ApplicationController
   end
 
   def create
-  　@message = Message.new(message_params)
+    @message = Message.new(message_params)
 
     if @message.save
       flash[:success] = 'Message が正常に投稿されました'
